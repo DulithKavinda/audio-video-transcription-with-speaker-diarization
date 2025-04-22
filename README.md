@@ -23,7 +23,7 @@ Features
         
     *   If multiple speakers: labeled by speaker.
         
-*   ⏳ Shows progress while converting or waiting for the transcription.
+* Shows progress while converting or waiting for the transcription.
 
 * * *
 
