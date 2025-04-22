@@ -6,18 +6,18 @@ This project converts a **video** or **audio** file into a **text transcript** u
 
 * * *
 
-✅ Features
+Features
 ----------
 
-*   🎥 Converts video files (`.mp4`, `.mov`, `.mkv`) to `.mp3` audio automatically.
+*   Converts video files (`.mp4`, `.mov`, `.mkv`) to `.mp3` audio automatically.
     
-*   🔊 Uploads audio to AssemblyAI.
+*   Uploads audio to AssemblyAI.
     
-*   🧠 Transcribes speech to text.
+*   Transcribes speech to text.
     
-*   🗣 Identifies multiple speakers and labels them (e.g., Speaker A, Speaker B).
+*   Identifies multiple speakers and labels them (e.g., Speaker A, Speaker B).
     
-*   📝 Saves the transcript to a `.txt` file.
+*   Saves the transcript to a `.txt` file.
     
     *   If only one speaker: plain transcript.
         
@@ -27,7 +27,7 @@ This project converts a **video** or **audio** file into a **text transcript** u
 
 * * *
 
-🧪 Technologies Used
+Technologies Used
 --------------------
 
 *   **Python 3**
@@ -42,7 +42,7 @@ This project converts a **video** or **audio** file into a **text transcript** u
 
 * * *
 
-📁 Project Files
+Project Files
 ----------------
 
 *   `main.py` – The entry point. Determines file type and runs the transcription pipeline.
@@ -55,7 +55,7 @@ This project converts a **video** or **audio** file into a **text transcript** u
 
 * * *
 
-🛠️ Setup
+Setup
 ---------
 
 1.  **Install ffmpeg**
@@ -93,10 +93,10 @@ This project converts a **video** or **audio** file into a **text transcript** u
 
 * * *
 
-▶️ How to Run
+How to Run
 -------------
 
-From the terminal, run:
+From the terminal run:
 
 bash
 
@@ -114,24 +114,13 @@ CopyEdit
 
 * * *
 
-📄 Output
+Output
 ---------
 
 *   A file named like `yourfile_with_speakers.txt` will be generated.
     
-*   If multiple speakers: the text includes labels like `Speaker A`, `Speaker B`, etc.
+*   If multiple speakers: the text includes labels like `Speaker A`, `Speaker B` etc.
     
 *   If one speaker: plain transcript without labels.
 
 * * *
-
-💬 Example
-----------
-
-bash
-
-CopyEdit
-
-`python main.py meeting_recording.mp4`
-
-→ Output: `meeting_recording_with_speakers.txt`
