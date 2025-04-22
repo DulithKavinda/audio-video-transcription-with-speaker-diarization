@@ -66,10 +66,6 @@ Setup
 2.  **Install dependencies**  
     Run this command in your terminal:
     
-    bash
-    
-    CopyEdit
-    
     `pip install requests`
     
 3.  **Set your AssemblyAI API key**
@@ -77,11 +73,6 @@ Setup
     *   Create a file called `api_secrets.py` in the root folder.
         
     *   Paste your key like this:
-        
-        python
-        
-        CopyEdit
-        
         `API_KEY = "your_assembly_ai_api_key"`
 
 * * *
@@ -90,19 +81,9 @@ How to Run
 -------------
 
 From the terminal run:
-
-bash
-
-CopyEdit
-
 `python main.py yourfile.mp4`
 
 Or for audio:
-
-bash
-
-CopyEdit
-
 `python main.py yourfile.mp3`
 
 * * *
