@@ -62,13 +62,6 @@ Setup
     
     *   On Windows: Download from [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) and add it to system PATH.
         
-    *   On Linux/Mac:
-        
-        bash
-        
-        CopyEdit
-        
-        `sudo apt install ffmpeg     # Debian/Ubuntu brew install ffmpeg         # macOS with Homebrew`
         
 2.  **Install dependencies**  
     Run this command in your terminal:
