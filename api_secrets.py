@@ -1,1 +1,1 @@
-API_KEY = "e61a65dcf2414d7f845130eb84648d70"
+API_KEY = "blyai_api_key"
