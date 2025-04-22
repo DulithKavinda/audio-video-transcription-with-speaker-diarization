@@ -1,1 +1,1 @@
-API_KEY = "blyai_api_key"
+API_KEY = "assemblyai_api_key"
