@@ -2,7 +2,7 @@
 🎙 Audio/Video Transcription with Speaker Diarization
 =====================================================
 
-This project converts a **video** or **audio** file into a **text transcript** using [AssemblyAI's Speech-to-Text API](https://www.assemblyai.com/). If the input is a video, it is first converted into audio using `ffmpeg`. The transcript can also include **speaker labels** if multiple speakers are detected.
+This project converts a **video** or **audio** file into a **text transcript** using [AssemblyAI's Speech-to-Text API](https://www.assemblyai.com/). If the input is a video, it is first converted into audio using `ffmpeg`. The transcript can also include **speaker labels** if multiple speakers are detected. Compatible with any video or audio formats.
 
 * * *
 
@@ -90,7 +90,8 @@ Or for audio:
 
 Output
 ---------
-
+*   A file named like `yourfile_converted.mp3` will be generated if your file is a video file.
+  
 *   A file named like `yourfile_with_speakers.txt` will be generated.
     
 *   If multiple speakers: the text includes labels like `Speaker A`, `Speaker B` etc.
