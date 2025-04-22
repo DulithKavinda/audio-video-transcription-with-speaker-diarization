@@ -28,7 +28,7 @@ def video_to_audio(input_file, output_file):
 
     def show_loading():
         while not done[0]:
-            print("⏳ Converting...", end="\r")
+            print("Converting...", end="\r")
             time.sleep(1)
 
     done = [False]
@@ -69,7 +69,6 @@ def upload(filename):
     audio_url = upload_response.json()['upload_url']
     return audio_url
 
-#transcribe
 
 # transcribe
 def transcribe(audio_url):
@@ -98,7 +97,7 @@ def get_transcription_result_url(audio_url):
      elif data['status'] == 'error':
         return data, data['error']
      
-     print('⏳waiting 30 seconds...')
+     print('waiting 30 seconds...')
      time.sleep(30)
 
 speaker_map = {}
@@ -126,11 +125,11 @@ def save_transcript(audio_url, filename):
                         text = utt['text']
                         f.write(f"{get_speaker_label(speaker)}: {text}\n")
                 else:
-                    # Single speaker - combine all utterances into one plain text
+                    # Single speaker 
                     full_text = ' '.join(utt['text'] for utt in data['utterances'])
                     f.write(full_text)
             else:
-                # No utterance info, fallback to plain transcript
+                # No utterance info so fallback to plain transcript
                 f.write(data['text'])
 
         print("Transcription saved!")
