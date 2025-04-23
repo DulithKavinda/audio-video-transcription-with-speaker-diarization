@@ -104,7 +104,7 @@ speaker_map = {}
 
 def get_speaker_label(speaker_num):
     if speaker_num not in speaker_map:
-        speaker_map[speaker_num] = chr(65 + len(speaker_map))  # A, B, C...
+        speaker_map[speaker_num] = chr(65 + len(speaker_map)) 
     return f"Speaker {speaker_map[speaker_num]}"    
 
 #save tarnscript
@@ -115,21 +115,21 @@ def save_transcript(audio_url, filename):
         text_file = filename + '_with_speakers.txt'
         with open(text_file, 'w') as f:
             if 'utterances' in data:
-                # Count how many unique speakers are in the utterances
+                #Count how many unique speakers in the utterances
                 unique_speakers = set(utt['speaker'] for utt in data['utterances'])
 
                 if len(unique_speakers) > 1:
-                    # Multiple speakers - include speaker labels
+                    #Multiple speakers, include speaker labels
                     for utt in data['utterances']:
                         speaker = utt['speaker']
                         text = utt['text']
                         f.write(f"{get_speaker_label(speaker)}: {text}\n")
                 else:
-                    # Single speaker 
+                    #Single speaker 
                     full_text = ' '.join(utt['text'] for utt in data['utterances'])
                     f.write(full_text)
             else:
-                # No utterance info so fallback to plain transcript
+                #No utterance info so fallback to plain transcript
                 f.write(data['text'])
 
         print("Transcription saved!")
